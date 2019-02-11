@@ -1,0 +1,124 @@
+html, body {
+	box-sizing: border-box;
+	font-family: futura, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@keyframes fadeInRight {
+	0% {right: 30px; visibility: hidden; opacity: 0;}
+	100% {right: 0px; visibility: visible;}
+}
+
+.top-background {
+	background-image: url("../assets/cupcake-banner.jpg");
+	height: 750px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	overflow: hidden;
+}
+
+.headline-container {
+	padding-top: 135px;
+}
+
+.headline {
+	color: #ff00ac;
+	font-size: 5em;
+}
+
+.section-2 {
+	background-image: url("../assets/cookie-bg.jpg");
+	height: 750px;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.animate-right {
+	position: relative;
+	animation-name: fadeInRight;
+	animation-duration: 1s;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.paragraph-container {
+	visibility: hidden;
+	padding-top: 235px;
+	width: 30%;
+	min-width: 300px;
+	font-size: 150%;
+	margin-left: 15%;
+}
+
+.cookie-p {
+	margin-top: 0;
+}
+
+.cookie-head {
+	margin-bottom: 10px;
+}
+
+.section-3 {
+	padding: 10px 0;
+	background-color: #ffecd1;
+	overflow: hidden;
+}
+
+.section-3 .img-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.img-container {
+	margin: 10px;
+	height: 325px;
+	width: 50%;
+	max-width: 550px;
+	overflow: hidden;
+}
+
+.animate-img-hover {
+	height: 100%;
+	width: 100%;
+	transition: all .2s ease-in-out;
+}
+
+.img-1 {
+	background-image: url("../assets/pastries.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.img-2 {
+	background-image: url("../assets/cinnamon-rolls.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.img-3 {
+	background-image: url("../assets/muffins.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.img-4 {
+	background-image: url("../assets/donuts.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+
+.img-1:hover, .img-2:hover, .img-3:hover, .img-4:hover {
+	transform: scale(1.1);
+}
+
+.test-div {
+	height: 5000px;
+}

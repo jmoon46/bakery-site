@@ -1,0 +1,63 @@
+html, body {
+	box-sizing: border-box;
+	font-family: futura, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.header-wrapper {
+	overflow: hidden;
+}
+
+.header {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../assets/in-store-header.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.header h1 {
+	margin: 0 auto;
+	color: white;
+	font-size: 6em;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 600px;
+	padding-top: 125px;
+	background-color: #ffecd1;
+}
+
+.locations-wrapper {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+}
+
+.locations-wrapper h2 {
+	margin-bottom: 45px;
+}
+
+.locations-wrapper p {
+	margin-bottom: 45px;
+}
+
+.mapouter {
+	width: 500px;
+	height: 500px;
+	border: 2px solid brown;
+	margin-bottom: 50px;
+	background-image: url("../assets/google-map-image.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,50 @@
+nav {
+	display: flex;
+}
+
+.navigation {
+	width: 100%;
+	height: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+	z-index: 100;
+	background-color: white;
+	border-bottom: solid pink 2px;
+}
+
+.navbar-container {
+	height: 100%;
+	width: 600px;
+	margin: auto;
+}
+
+.navigation-nav {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.nav-1-link {
+	height: 100%;
+	width: 150px;
+	color: purple;
+	text-decoration: none;
+	transition: .2s ease-in-out;
+}
+
+.nav-1-link:hover {
+	background-color: pink;
+	color: white;
+}
+
+.nav-1-link span {
+	padding-top: 12px;
+	display: inline-block;
+}
+
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+}
