@@ -12,6 +12,10 @@ const cookieP = document.querySelector(".cookie-p");
 
 const cookieHead = document.querySelector(".cookie-head");
 
+const bannerImage = document.querySelector(".top-background");
+
+const headline = document.querySelector(".headline");
+
 let scrollBarPosition;
 
 const navBarFade = () => {
@@ -33,5 +37,6 @@ const cookiePFade = () => {
 }
 
 const headlineScroll = () => {
-	document.querySelector(".headline").style.transform = `translate(0px, ${scrollBarPosition / 1.55}%)`
+	headline.style.transform = `translate(0px, -${scrollBarPosition / 3.2}%)`
+	bannerImage.style.transform = `translate(0px, ${scrollBarPosition}px)`
 }

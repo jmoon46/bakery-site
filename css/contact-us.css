@@ -51,6 +51,10 @@ html, body {
 	padding: 5px 10px;
 }
 
+.form-field:focus {
+	outline: 2px solid #513105;
+}
+
 textarea {
 	resize: none;
 }
