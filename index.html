@@ -8,22 +8,39 @@
     <link rel="stylesheet" type="text/css" href="css/main-navbar.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>A baking site for a bakery</title>
+    <title>A bakery site for a bakery</title>
 	</head>
 	<body>
 		<div class="navigation">
 			<nav class="navigation_nav">
-				<!-- home products contact-us locations -->
 				<a class="nav-1-link" href="index.html">Home</a>
 				<a class="nav-1-link" href="products.html">Products</a>
 				<a class="nav-1-link" href="contact-us.html">Contact Us</a>
 				<a class="nav-1-link" href="locations.html">Locations</a>
 			</nav>
 		</div>
+		<div class="mobile-nav-wrapper">
+			<div class="mobile-top-nav">
+				<button type="button" onclick="navBarToggle()">
+					<svg width="30" height="30">
+	          <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5"/>
+	          <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5"/>
+	          <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5"/>
+	 				</svg>﻿
+	 			</button>
+			</div>
+			<div class="drop-down-nav">
+				<nav class="mobile-nav">
+					<a class="mobile-nav-link" href="index.html"><span>Home</span></a>
+					<a class="mobile-nav-link" href="products.html"><span>Products</span></a>
+					<a class="mobile-nav-link" href="contact-us.html"><span>Contact Us</span></a>
+					<a class="mobile-nav-link" href="locations.html"><span>Locations</span></a>
+				</nav>
+			</div>
+		</div>
 		<div class="navigation-2 hidden">
 			<div class="navbar-bg">
 				<nav class="navigation_nav">
-					<!-- home products contact-us locations -->
 					<a class="nav-2-link" href="index.html"><span>Home</span></a>
 					<a class="nav-2-link" href="products.html"><span>Products</span></a>
 					<a class="nav-2-link" href="contact-us.html"><span>Contact Us</span></a>

@@ -7,25 +7,13 @@ window.onscroll = () => {
 }
 
 const navBar = document.querySelector(".navigation-2");
-
 const cookieP = document.querySelector(".cookie-p");
-
 const cookieHead = document.querySelector(".cookie-head");
-
 const bannerImage = document.querySelector(".top-background");
-
 const headline = document.querySelector(".headline");
+const dropDownNav = document.querySelector(".drop-down-nav");
 
 let scrollBarPosition;
-
-const navBarFade = () => {
-	scrollBarPosition = window.pageYOffset;
-	if (scrollBarPosition > 700) {
-		navBar.classList.remove("hidden")
-	} else {
-		navBar.classList.add("hidden")
-	}
-}
 
 const cookiePFade = () => {
 	if (scrollBarPosition > 450) {
@@ -36,7 +24,26 @@ const cookiePFade = () => {
 	}
 }
 
+const navBarFade = () => {
+	scrollBarPosition = window.pageYOffset;
+	if (scrollBarPosition > 700) {
+		navBar.classList.remove("hidden")
+	} else {
+		navBar.classList.add("hidden")
+	}
+}
+
 const headlineScroll = () => {
-	headline.style.transform = `translate(0px, -${scrollBarPosition / 3.2}%)`
+	headline.style.transform = `translate(0px, -${scrollBarPosition / 3.25}%)`
 	bannerImage.style.transform = `translate(0px, ${scrollBarPosition}px)`
+}
+
+dropDownNav.style.display = "none";
+
+const navBarToggle = () => {
+	if (dropDownNav.style.display === "none") {
+		dropDownNav.style.display = "block"
+	} else {
+		dropDownNav.style.display = "none"
+	}
 }

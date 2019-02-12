@@ -13,15 +13,6 @@ const header = document.querySelector(".header");
 
 let scrollBarPosition;
 
-// const navBarFade = () => {
-// 	scrollBarPosition = window.pageYOffset;
-// 	if (scrollBarPosition > 30) {
-// 		navBar.classList.remove("hidden")
-// 	} else {
-// 		navBar.classList.add("hidden")
-// 	}
-// }
-
 const navBarFixed = () => {
 	scrollBarPosition = window.pageYOffset;
 	if (scrollBarPosition >= 400) {
