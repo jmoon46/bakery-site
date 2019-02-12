@@ -1,9 +1,14 @@
 console.log("we live boys");
 
 window.onscroll = () => {
-	navBarFade();
-	cookiePFade();
-	headlineScroll();
+	if (window.innerWidth > 580) {
+		navBarFade();
+		headlineScroll();
+		cookiePFade();
+	} else {
+		cookieP.classList.add("visible");
+		cookieHead.classList.add("visible");
+	}
 }
 
 const navBar = document.querySelector(".navigation-2");
