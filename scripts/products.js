@@ -2,13 +2,17 @@ console.log("we live boys");
 
 window.onscroll = () => {
 	navBarFixed();
-	headlineScroll();
-	headerFixed();
+
+	if (window.innerWidth > 580) {
+		headlineScroll();
+		headerFixed();
+	}
 }
 
 const navBar = document.querySelector(".navigation");
 const headline = document.querySelector(".headline");
 const header = document.querySelector(".header");
+const dropDownNav = document.querySelector(".drop-down-nav");
 
 
 let scrollBarPosition;
@@ -28,4 +32,14 @@ const headlineScroll = () => {
 
 const headerFixed = () => {
 	header.style.transform = `translate(0px, ${scrollBarPosition}px)`
+}
+
+dropDownNav.style.display = "none";
+
+const navBarToggle = () => {
+	if (dropDownNav.style.display === "none") {
+		dropDownNav.style.display = "block"
+	} else {
+		dropDownNav.style.display = "none"
+	}
 }

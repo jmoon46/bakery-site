@@ -1,3 +1,13 @@
+@media (max-width: 580px) {
+	.navigation button {
+		display: inline-block !important;
+	}
+
+	.navbar-container {
+		display: none;
+	}
+}
+
 nav {
 	display: flex;
 }
@@ -47,4 +57,57 @@ nav {
 .navbar-fixed {
 	position: fixed;
 	top: 0;
+}
+
+
+
+
+.navigation button {
+	display: none;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navigation button:focus {
+	outline: none;
+}
+
+.navigation svg {
+	fill: pink;
+	margin-top: 9px;
+	margin-left: 9px;
+}
+
+.drop-down-nav {
+	position: absolute;
+	top: 50px;
+	z-index: 100;
+	height: 200px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 2px solid pink;
+}
+
+.mobile-nav {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.mobile-nav-link {
+	width: 100%;
+	height: 25%;
+	padding-top: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: purple;
+	transition: all .2s ease-in-out;
+}
+
+.mobile-nav-link:hover {
+	background-color: pink;
+	color: white;
 }

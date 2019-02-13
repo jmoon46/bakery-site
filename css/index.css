@@ -78,13 +78,13 @@ html, body {
 .section-3 .img-wrapper {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .img-container {
 	margin: 10px;
 	height: 325px;
-	width: 50%;
-	max-width: 550px;
+	width: 500px;
 	overflow: hidden;
 }
 
