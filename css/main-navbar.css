@@ -8,6 +8,12 @@
 	}
 }
 
+@media (min-width: 581px) {
+	.drop-down-nav {
+		display: none !important;
+	}
+}
+
 .nav-1-link {
 	margin: auto;
 	text-decoration: none;

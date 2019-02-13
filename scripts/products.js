@@ -6,6 +6,10 @@ window.onscroll = () => {
 	if (window.innerWidth > 580) {
 		headlineScroll();
 		headerFixed();
+	} else {
+		// remove transform translate from header and headline
+		headline.removeAttribute("style");
+		header.removeAttribute("style");
 	}
 }
 
