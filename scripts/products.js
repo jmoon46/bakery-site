@@ -7,7 +7,6 @@ window.onscroll = () => {
 		headlineScroll();
 		headerFixed();
 	} else {
-		// remove transform translate from header and headline
 		headline.removeAttribute("style");
 		header.removeAttribute("style");
 	}
